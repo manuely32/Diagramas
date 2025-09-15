@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-1" value="AWS RDS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="590" y="140" width="100" height="130" as="geometry" />
+          <mxGeometry x="610" y="145" width="100" height="130" as="geometry" />
         </mxCell>
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-2" value="Usuário" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="180" width="120" height="60" as="geometry" />
@@ -22,16 +22,31 @@
             <mxPoint x="210" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-14" value="Envia os dados de cadastro" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-5">
+          <mxGeometry x="-0.0594" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=27.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-4" target="mTM9a_iym6ZU5rTM1kM7-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="350" y="250" as="sourcePoint" />
             <mxPoint x="520" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTM9a_iym6ZU5rTM1kM7-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.018;exitY=0.394;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-2" target="mTM9a_iym6ZU5rTM1kM7-3">
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-15" value="Salva os dados no AWS RDS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-6">
+          <mxGeometry x="-0.1948" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-2" target="mTM9a_iym6ZU5rTM1kM7-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="160" y="220" as="sourcePoint" />
+            <mxPoint x="162" y="204" as="sourcePoint" />
             <mxPoint x="210" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-16" value="Envia as credencias de acesso" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-9">
+          <mxGeometry x="-0.3542" y="2" relative="1" as="geometry">
+            <mxPoint x="32" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.003;entryY=0.406;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-3" target="mTM9a_iym6ZU5rTM1kM7-1">
@@ -40,10 +55,20 @@
             <mxPoint x="530" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-17" value="Verifica credencias" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-11">
+          <mxGeometry x="-0.1955" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=90;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-1" target="mTM9a_iym6ZU5rTM1kM7-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="340" as="sourcePoint" />
             <mxPoint x="570" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-18" value="Retorna credenciais" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-12">
+          <mxGeometry x="-0.0183" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mTM9a_iym6ZU5rTM1kM7-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.023;exitY=0.597;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mTM9a_iym6ZU5rTM1kM7-3" target="mTM9a_iym6ZU5rTM1kM7-2">
