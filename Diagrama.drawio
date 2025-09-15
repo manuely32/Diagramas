@@ -77,6 +77,11 @@
             <mxPoint x="220" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mTM9a_iym6ZU5rTM1kM7-19" value="Acesso autorizado ou negado" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mTM9a_iym6ZU5rTM1kM7-13">
+          <mxGeometry x="0.2643" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
